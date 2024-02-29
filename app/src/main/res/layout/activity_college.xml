@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:titleTextColor="@color/white"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_alignParentTop="true" >
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="College Event"
+                android:textColor="@color/txt"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="24dp"
+                android:textColor="@color/black" />
+
+            <!-- Event Name Field -->
+            <EditText
+                android:id="@+id/editTextEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEventName"
+                android:hint="Enter Event Name"
+                android:padding="24dp"
+                android:textColor="@color/txt" />
+
+            <!-- Event Description -->
+            <TextView
+                android:id="@+id/textViewEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextEventName"
+                android:text="Event Description"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="24dp"
+                android:textColor="@color/black" />
+
+            <!-- Event Description Field -->
+            <EditText
+                android:id="@+id/editTextEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEventDescription"
+                android:hint="Enter Event Description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="24dp"
+                android:textColor="@color/txt" />
+
+            <!-- Upload Button -->
+            <Button
+                android:id="@+id/btnUploadEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextEventDescription"
+                android:text="Upload Event"
+                android:padding="24dp"
+                android:textColor="@color/txt" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

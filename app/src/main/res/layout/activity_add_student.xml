@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AddStudentActivity">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add Student"
+                android:textColor="@color/txt"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Student ID Field -->
+        <EditText
+            android:id="@+id/editTextStudentId"
+            android:layout_width="match_parent"
+            android:textColor="@color/txt"
+            android:layout_height="wrap_content"
+            android:hint="Student ID"
+            android:padding="24dp" />
+
+        <!-- Name Field -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:textColor="@color/txt"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="24dp" />
+
+        <!-- Semester Field -->
+        <EditText
+            android:id="@+id/editTextSem"
+            android:layout_width="match_parent"
+            android:textColor="@color/txt"
+            android:layout_height="wrap_content"
+            android:hint="Semester"
+            android:padding="24dp" />
+
+        <!-- Branch Field -->
+        <EditText
+            android:id="@+id/editTextBranch"
+            android:layout_width="match_parent"
+            android:textColor="@color/txt"
+            android:layout_height="wrap_content"
+            android:hint="Branch"
+            android:padding="24dp" />
+
+        <!-- USN Field -->
+        <EditText
+            android:id="@+id/editTextUsn"
+            android:layout_width="match_parent"
+            android:textColor="@color/txt"
+            android:layout_height="wrap_content"
+            android:hint="USN"
+            android:padding="24dp" />
+        <!-- Upload Button -->
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Upload"
+            android:textColor="@color/txt"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:titleTextColor="@android:color/white"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_alignParentTop="true" >
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Circular Notice"
+                android:textColor="@color/txt"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewCircularName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Circular Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="24dp"
+                android:textColor="@color/black" />
+
+            <!-- Circular Name Field -->
+            <EditText
+                android:id="@+id/editTextCircularName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCircularName"
+                android:hint="Enter Circular Name"
+                android:padding="24dp"
+                android:textColor="@color/txt" />
+
+            <!-- Circular Description -->
+            <TextView
+                android:id="@+id/textViewCircularDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextCircularName"
+                android:text="Circular Description"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="24dp"
+                android:textColor="@color/black" />
+
+            <!-- Circular Description Field -->
+            <EditText
+                android:id="@+id/editTextCircularDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewCircularDescription"
+                android:hint="Enter Circular Description"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="24dp"
+                android:textColor="@color/txt" />
+
+            <!-- Upload Button -->
+            <Button
+                android:id="@+id/btnUploadCircular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextCircularDescription"
+                android:text="Upload Circular"
+                android:padding="24dp"
+                android:textColor="@color/txt" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

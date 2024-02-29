@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ADMIN DASHBOARD"
+                android:textColor="@color/txt"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Functionality Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnAddStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Student"
+            android:textColor="@color/txt" />
+
+        <Button
+            android:id="@+id/btnEditStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Student / View Student"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/txt" />
+
+        <Button
+            android:id="@+id/btnExamTimeTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exam Time Table"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/txt" />
+
+        <Button
+            android:id="@+id/btnCircularNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circular Notice"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/txt" />
+
+        <Button
+            android:id="@+id/btnCollegeEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="College Events"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/txt" />
+
+    </LinearLayout>
+
+</RelativeLayout>

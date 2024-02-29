@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Student Details"
+            android:textSize="20sp"
+            android:textColor="@color/txt"
+            android:gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewStudentId"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:padding="24dp"
+            android:text="Student ID"
+            android:textColor="@color/txt" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@color/txt"
+            android:padding="24dp" />
+
+        <EditText
+            android:id="@+id/editTextSem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Semester"
+            android:textColor="@color/txt"
+            android:padding="24dp" />
+
+        <EditText
+            android:id="@+id/editTextBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Branch"
+            android:textColor="@color/txt"
+            android:padding="24dp" />
+
+        <TextView
+            android:id="@+id/textViewUsn"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="USN"
+            android:textColor="@color/txt"
+            android:padding="24dp" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:textColor="@color/txt"
+            android:padding="24dp" />
+
+    </LinearLayout>
+</LinearLayout>

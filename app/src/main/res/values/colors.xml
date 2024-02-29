@@ -1,0 +1,43 @@
+<resources>
+    <!-- Pastel Colors -->
+    <color name="white">#ffffff</color>
+    <color name="pastelLavender">#D7B9E4</color>
+    <color name="pastelYellow">#FDD692</color>
+    <color name="pastelBlue">#AED9E0</color>
+    <color name="pastelPink">#F9C0D9</color>
+    <color name="pastelGreen">#C8E9C0</color>
+    <color name="pastelPrimary">#E6A8A8</color>
+    <color name="pastelText">#7D8A94</color>
+    <color name="pastelButtonBackground">#FFC3A0</color>
+    <color name="pastelButtonText">#FFFFFF</color>
+
+    <!-- Bright Colors -->
+    <color name="brightRed">#FF0000</color>
+    <color name="brightOrange">#FFA500</color>
+    <color name="brightYellow">#FFFF00</color>
+    <color name="brightGreen">#00FF00</color>
+    <color name="brightBlue">#0000FF</color>
+    <color name="brightPurple">#800080</color>
+    <color name="brightPink">#FFC0CB</color>
+    <color name="brightCyan">#00FFFF</color>
+    <color name="brightMagenta">#FF00FF</color>
+
+    <!-- Light Colors -->
+    <color name="lightGray">#D3D3D3</color>
+    <color name="lightPink">#FFB6C1</color>
+    <color name="lightBlue">#ADD8E6</color>
+    <color name="lightGreen">#90EE90</color>
+    <color name="lightYellow">#FFFFE0</color>
+    <color name="lightPurple">#E6E6FA</color>
+    <color name="lightCyan">#E0FFFF</color>
+    <color name="lightOrange">#FFE4B2</color>
+    <color name="lightRed">#FFC0CB</color>
+    <color name="lightMagenta">#FFB5C5</color>
+
+    <!-- Custom Colors -->
+    <color name="button">#E4405F</color>
+    <color name="bar">#E4405F</color>
+    <color name="txt">#FFFFFF</color>
+    <color name="background">#FFB5C5</color>
+    <color name="black">#000000</color>
+</resources>

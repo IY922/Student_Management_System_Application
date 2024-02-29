@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bar">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exam Details"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextExamName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Exam Name"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+            <EditText
+                android:id="@+id/editTextSem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Semester"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+            <EditText
+                android:id="@+id/editTextBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Branch"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+            <TextView
+                android:id="@+id/textViewSubject1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 1"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextSubject1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Name"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+            <EditText
+                android:id="@+id/editTextSubject1Timetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Timetable"
+                android:padding="16dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/txt" />
+
+            <TextView
+                android:id="@+id/textViewSubject2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 2"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextSubject2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Name"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+            <EditText
+                android:id="@+id/editTextSubject2Timetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Timetable"
+                android:padding="16dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/txt" />
+
+            <TextView
+                android:id="@+id/textViewSubject3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 3"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextSubject3Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Name"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+            <EditText
+                android:id="@+id/editTextSubject3Timetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Timetable"
+                android:padding="16dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/txt" />
+
+            <TextView
+                android:id="@+id/textViewSubject4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject 4"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextSubject4Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Name"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+            <EditText
+                android:id="@+id/editTextSubject4Timetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Subject Timetable"
+                android:padding="16dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/txt" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp"
+                android:textColor="@color/txt" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
